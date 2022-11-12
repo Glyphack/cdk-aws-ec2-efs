@@ -63,8 +63,8 @@
     "constructs": "^10.0.5"
   },
   "keywords": [
-    "cdk",
-    "awscdk"
+    "aws-cdk",
+    "cdk"
   ],
   "main": "lib/index.js",
   "license": "Apache-2.0",
