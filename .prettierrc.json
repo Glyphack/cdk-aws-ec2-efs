@@ -1,7 +1,3 @@
 {
-  "overrides": [
-    {
-      "singleQuote": true
-    }
-  ]
+  "overrides": []
 }

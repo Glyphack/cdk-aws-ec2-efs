@@ -67,6 +67,7 @@
   },
   "keywords": [
     "aws-cdk",
+    "awscdk",
     "cdk"
   ],
   "main": "lib/index.js",
