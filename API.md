@@ -120,6 +120,7 @@ const ec2WithEfsProps: Ec2WithEfsProps = { ... }
 | <code><a href="#cdk-aws-ec2-efs.Ec2WithEfsProps.property.fileSystem">fileSystem</a></code> | <code>aws-cdk-lib.aws_efs.FileSystem</code> | The file system to mount *. |
 | <code><a href="#cdk-aws-ec2-efs.Ec2WithEfsProps.property.instance">instance</a></code> | <code>aws-cdk-lib.aws_ec2.Instance</code> | The instance to mount file system it must have yum. |
 | <code><a href="#cdk-aws-ec2-efs.Ec2WithEfsProps.property.configureConnection">configureConnection</a></code> | <code>boolean</code> | To configure the efs to allow connection to default port from ec2. |
+| <code><a href="#cdk-aws-ec2-efs.Ec2WithEfsProps.property.mountPoint">mountPoint</a></code> | <code>string</code> | Direcrory to mount the file system on the ec2 instance. |
 
 ---
 
@@ -162,6 +163,21 @@ To configure the efs to allow connection to default port from ec2.
 
 Defaults too false.
 If you set it to true then it's not needed to allow connections manually.
+*
+
+---
+
+##### `mountPoint`<sup>Optional</sup> <a name="mountPoint" id="cdk-aws-ec2-efs.Ec2WithEfsProps.property.mountPoint"></a>
+
+```typescript
+public readonly mountPoint: string;
+```
+
+- *Type:* string
+
+Direcrory to mount the file system on the ec2 instance.
+
+Defaults to /mnt/efs/fs1
 *
 
 ---
