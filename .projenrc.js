@@ -11,7 +11,7 @@ const project = new awscdk.AwsCdkConstructLibrary({
     module: 'cdk_aws_ec2_efs',
   },
   keywords: ['cdk', 'aws-cdk'],
-  prettier: true,
-  prettierOptions: { overrides: [{ singleQuote: true }] },
+  // prettier: true,
+  // prettierOptions: { overrides: [{ singleQuote: true }] },
 });
 project.synth();
