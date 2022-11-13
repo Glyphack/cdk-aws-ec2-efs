@@ -28,7 +28,7 @@ export class Ec2WithEfs extends Construct {
     super(scope, id);
     if (props.configureConnection) {
       props.fileSystem.connections.allowDefaultPortFrom(
-        props.instance.connections,
+        props.instance.connections
       );
     }
     const mountPoint = props.mountPoint ?? '/mnt/efs/fs1';
@@ -44,7 +44,7 @@ export class Ec2WithEfs extends Construct {
         'echo "${file_system_id_1}.efs.' +
         Stack.of(this).region +
         '.amazonaws.com:/ ${efs_mount_point_1} nfs4 nfsvers=4.1,rsize=1048576,wsize=1048576,hard,timeo=600,retrans=2,noresvport,_netdev 0 0" >> /etc/fstab',
-      'mount -a -t efs,nfs4 defaults',
+      'mount -a -t efs,nfs4 defaults'
     );
   }
 }
